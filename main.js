@@ -1,5 +1,6 @@
 // Import discord.js and the environment variables
 const { Client, GatewayIntentBits } = require('discord.js');
+const { fs } = require('fs');
 require('dotenv/config');
 
 // Create a new client
@@ -13,7 +14,7 @@ const client = new Client({
 
 // Bot startup message
 client.on('ready', () => {
-    console.log('[!] Bot is online! :)');
+    console.log('[!] Bot ready!');
 });
 
 // Login to the bot
